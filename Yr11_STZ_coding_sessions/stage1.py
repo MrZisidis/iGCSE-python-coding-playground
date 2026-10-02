@@ -8,12 +8,13 @@
 
 import railway_data as data
 
-print("Service Code\tRoute\t\t\tDepartureTime\tArrivalTime")
-print("*"*50)
+title = "Service Code\tRoute\t\t\t\tDepartureTime\tArrivalTime"
+print(title)
+print("*"*(len(title)+15))
 
 for item in data.SERVICES:
     # print(item[0],"\t\t", item[3], item[4], item[2],"\t\t", item[1])
-    txt = f"{item[0]:<12}\titem[3] item[4] item[2] item[1]"
+    txt = f"{item[0]:<12}\t{item[3]}-{item[4]}\t{item[1]:<15}\t{item[2]}"
     print(txt)
 
 
