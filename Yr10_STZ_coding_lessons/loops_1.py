@@ -9,5 +9,8 @@ for i in range(1,4):
     total = total + number
     average = total / counter
 
+print(number)
+print(i)
+
 print("the total is: ",total)
 print("the average is: ", average)
